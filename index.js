@@ -15,7 +15,7 @@ module.exports = function unionValue(obj, prop, value) {
   }
 
   var arr = arrayify(get(obj, prop) || []);
-  set(obj, prop, union(arr, value || []));
+  set(obj, prop, union(arr, arrayify(value || [])));
   return obj;
 };
 
