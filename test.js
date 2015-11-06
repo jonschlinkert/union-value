@@ -7,9 +7,9 @@
 
 'use strict';
 
-/* deps: mocha */
+require('mocha');
+require('should');
 var assert = require('assert');
-var should = require('should');
 var union = require('./');
 
 describe('union', function () {
@@ -30,6 +30,13 @@ describe('union', function () {
     union(obj, 'a.b.c', ['one', 'two']);
     union(obj, 'a.b.c', ['three']);
     obj.a.b.c.should.eql(['one', 'two', 'three']);
+  });
+
+  it('should support escaped dots:', function () {
+    var obj = {};
+    union(obj, 'a\\.b.c', ['one', 'two']);
+    union(obj, 'a\\.b.c', ['three']);
+    obj['a.b'].c.should.eql(['one', 'two', 'three']);
   });
 
   it('should throw an error:', function () {
