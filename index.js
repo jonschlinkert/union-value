@@ -11,7 +11,17 @@ module.exports = function unionValue(obj, prop, value) {
     throw new TypeError('union-value expects `prop` to be a string.');
   }
 
-  var arr = utils.arrayify(utils.get(obj, prop));
-  utils.set(obj, prop, utils.union(arr, utils.arrayify(value)));
+  var arr = arrayify(utils.get(obj, prop));
+  utils.set(obj, prop, utils.union(arr, arrayify(value)));
   return obj;
 };
+
+function arrayify(val) {
+  if (val === null || typeof val === 'undefined') {
+    return [];
+  }
+  if (Array.isArray(val)) {
+    return val;
+  }
+  return [val];
+}

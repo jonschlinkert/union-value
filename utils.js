@@ -24,7 +24,6 @@ require = utils;
  * Lazily required module dependencies
  */
 
-require('cast-to-array', 'arrayify');
 require('is-extendable', 'isObject');
 require('arr-union', 'union');
 require('get-value', 'get');
