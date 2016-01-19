@@ -1,9 +1,12 @@
 'use strict';
 
-var utils = require('./utils');
+var isObject = require('is-extendable');
+var union = require('arr-union');
+var get = require('get-value');
+var set = require('set-value');
 
 module.exports = function unionValue(obj, prop, value) {
-  if (!utils.isObject(obj)) {
+  if (!isObject(obj)) {
     throw new TypeError('union-value expects the first argument to be an object.');
   }
 
@@ -11,8 +14,8 @@ module.exports = function unionValue(obj, prop, value) {
     throw new TypeError('union-value expects `prop` to be a string.');
   }
 
-  var arr = arrayify(utils.get(obj, prop));
-  utils.set(obj, prop, utils.union(arr, arrayify(value)));
+  var arr = arrayify(get(obj, prop));
+  set(obj, prop, union(arr, arrayify(value)));
   return obj;
 };
 
