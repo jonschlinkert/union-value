@@ -20,14 +20,15 @@
     "test": "mocha"
   },
   "dependencies": {
-    "arr-union": "^3.0.0",
-    "get-value": "^2.0.2",
+    "arr-union": "^3.1.0",
+    "get-value": "^2.0.6",
     "is-extendable": "^0.1.1",
-    "set-value": "^0.4.2"
+    "set-value": "^0.4.3"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "*"
+    "gulp-format-md": "^0.1.11",
+    "mocha": "^3.2.0",
+    "should": "^11.2.0"
   },
   "keywords": [
     "array",
@@ -45,6 +46,14 @@
     "value"
   ],
   "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
     "related": {
       "list": [
         "assign-value",
@@ -53,6 +62,9 @@
         "set-value",
         "unset-value"
       ]
+    },
+    "lint": {
+      "reflinks": true
     }
   }
 }
