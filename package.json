@@ -21,9 +21,9 @@
   },
   "dependencies": {
     "arr-union": "^3.1.0",
-    "get-value": "^2.0.6",
-    "is-extendable": "^0.1.1",
-    "set-value": "^0.4.3"
+    "get-value": "^3.0.1",
+    "is-extendable": "^1.0.1",
+    "set-value": "^3.0.0"
   },
   "devDependencies": {
     "gulp-format-md": "^0.1.11",
