@@ -1,5 +1,6 @@
-# http://editorconfig.org/
-root = true
+  # http://editorconfig.org/
+
+root=true
 
 [*]
 charset = utf-8
