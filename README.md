@@ -15,7 +15,8 @@ $ npm install --save union-value
 ## Usage
 
 ```js
-const union = require('union-value');
+import union from 'union-value';
+
 const obj = {};
 
 union(obj, 'a.b.c', ['one', 'two']);
@@ -70,10 +71,10 @@ You might also be interested in these projects:
 
 ### Contributors
 
-| **Commits** | **Contributor** |  
-| --- | --- |  
-| 23 | [jonschlinkert](https://github.com/jonschlinkert) |  
-| 1  | [wtgtybhertgeghgtwtg](https://github.com/wtgtybhertgeghgtwtg) |  
+| **Commits** | **Contributor** |
+| --- | --- |
+| 23 | [jonschlinkert](https://github.com/jonschlinkert) |
+| 1  | [wtgtybhertgeghgtwtg](https://github.com/wtgtybhertgeghgtwtg) |
 
 ### Author
 
