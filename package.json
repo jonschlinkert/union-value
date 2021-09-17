@@ -1,7 +1,7 @@
 {
   "name": "union-value",
   "description": "Set an array of unique values as the property of an object. Supports setting deeply nested properties using using object-paths/dot notation.",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "homepage": "https://github.com/jonschlinkert/union-value",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/union-value",
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "get-value": "^3.0.1",
-    "set-value": "^3.0.0"
+    "set-value": "^4.1.0"
   },
   "keywords": [
     "array",
