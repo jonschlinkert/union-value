@@ -17,11 +17,12 @@
     "node": ">=6"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "better-audit": "better-npm-audit audit"
   },
   "dependencies": {
     "get-value": "^3.0.1",
-    "set-value": "^3.0.0"
+    "set-value": "^4.0.1"
   },
   "keywords": [
     "array",
@@ -61,7 +62,8 @@
     }
   },
   "devDependencies": {
+    "better-npm-audit": "^3.3.0",
     "gulp-format-md": "^2.0.0",
-    "mocha": "^6.1.4"
+    "mocha": "^9.1.2"
   }
 }
